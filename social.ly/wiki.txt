@@ -1,0 +1,37 @@
+--Its has a news feed where a user can post status messages 
+and others can comment on the posts and like/dislike the posts/comments.
+--Each user  have their own news feed page which lists all their previously 
+posted status messages and their comments
+--There is a login page where a user can enter their credentials and 
+login to the app. Upon logging in, user rediercts to newsfeed page.
+
+
+database design is:
+
+1) table-activities
+   integer- trackable_id, recipient_id, owner_id
+   string- trackable_tye, owner_type,key, recipeint_type
+   text- parameters
+   datetime- created_at, updated_at
+
+2) table- comments
+  string-title, commentable_type, role
+  text- comment, comment_html
+  integer- commentable_id, user_id
+  datetime- created_at, updated_at
+
+3) table - posts
+  text- content, content_html
+  integer- user_id, cached_votes_up,comments_count
+  datetime- created_at, updated_at
+ 
+4)table-users
+ string- name, email,encrypted_password,about,reset_password_token,avatar, cover,current_sign_in_ip,last_sign_in_ip,confirmation_token,sex, location,phone_number,slug
+ datetime- created_at, updated_at,reset_password_sent_at,remember_created_at,confirmed_at,confirmation_sent_at,
+ integer-sign_in_count,posts_count
+
+5)table- votes
+ integer - votable_id,voter_id,vote_weight
+ datetime- created_at, updated_at
+ string- votable_type,voter_type,vote_scope,
+

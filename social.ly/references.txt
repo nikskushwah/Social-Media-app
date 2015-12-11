@@ -1,0 +1,6 @@
+1) Devise ----- https://github.com/plataformatec/devise
+2)act as votable ------ https://github.com/ryanto/acts_as_votable
+3)act as comment ------ https://github.com/jackdempsey/acts_as_commentable
+4)public avtivity ----- https://github.com/chaps-io/public_activity
+5) paginate ------ https://github.com/mislav/will_paginate
+6)elastic search ------ https://www.elastic.co/
